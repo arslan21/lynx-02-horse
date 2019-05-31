@@ -1,0 +1,49 @@
+
+.body * {
+  box-sizing: border-box;
+}
+
+.boxWraper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.box,
+.resultBox {
+  margin: auto;
+  border: 1px solid blue;
+  background-color: #cdcdcd;
+  width: 400px;
+  min-height: 200px;
+  padding: 30px 50px;;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+input,
+label {
+  width: 100%;
+}
+
+.resultBox p {
+  text-align: center;;
+}
+
+.modalWraper {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: silver;
+}
+
+.result button {
+  align-self: flex-end;
+  margin-top: auto;
+}

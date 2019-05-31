@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>summ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  </head>
+  <body class="body">
+    <div class="app">
+      <div class="boxWraper">
+        <section class="box">
+          <label for="position"></label>
+          <input type="text" name="position" value="D4" v-model="position">
+          <button type="button" name="button" v-on:click="showResult">
+            Расчитать ходы
+          </button>
+        </section>
+        <!-- <transition name="madal-transition">         -->
+          <div id="modal" v-if="modalOpened">
+            <div class="modalWraper">
+              <section class="resultBox">
+                <p>Возможные ходы конем с клетки {{position}}</p>
+                <p>{{result}}</p>
+                <button type="button" name="button" v-on:click="closeResult">ОК</button>
+              </section>
+            </div>
+          </div>
+        <!-- </transition> -->
+      </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
